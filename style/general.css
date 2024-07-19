@@ -5,8 +5,9 @@ p{
 
 body{
   margin: 0;
-  height: 100%;
-  width: 100%;
   background: rgb(31,31,31);
+  height: 100vh;
+  width: 100vw;
+  padding-left: 170px;
 }
   
