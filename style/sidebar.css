@@ -13,12 +13,51 @@
 		border-color: rgb(43,43,43);
 }
 
+.learn-http-grid{
+  background-color: darkblue;
+  display:grid;
+  grid-template-columns: 10px 100px;
+  padding-left:5px;
+  padding-right:0px;
+  height: 22px;
+  width:165px;
+  column-gap: 5px;
+  row-gap:100px;
+}
 
-.page-title{
-    margin-left:20px;
-    margin-top:35px;
+.learn-http-grid:hover{
+  cursor:pointer
+}
+
+.special1 .arrow{
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.speciala .arrow{
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.learn-http{
+    display:inline-block;
     font-family: 'Cascadia Code', sans-serif;
     font-size:12px;
-    font-weight:bold;
+    padding-top:4px;
     color:rgb(204,204,204);
-  }
+    font-weight:bold;
+    user-select: none;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
