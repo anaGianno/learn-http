@@ -14,7 +14,6 @@
 }
 
 .learn-http-grid{
-  background-color: darkblue;
   display:grid;
   grid-template-columns: 10px 100px;
   padding-left:5px;
@@ -41,12 +40,16 @@
 
 .learn-http{
     display:inline-block;
-    font-family: 'Cascadia Code', sans-serif;
-    font-size:12px;
-    padding-top:4px;
-    color:rgb(204,204,204);
     font-weight:bold;
-    user-select: none;
+}
+
+.sidebar-text{
+  display:inline-block;
+  font-family: 'Cascadia Code', sans-serif;
+  font-size:12px;
+  padding-top:4px;
+  color:rgb(204,204,204);
+  user-select: none;
 }
 
 .arrow {
@@ -56,8 +59,40 @@
   padding: 3px;
 }
 
+.orange-arrow {
+  border: solid rgb(208,72,27);
+  background: solid white;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 2px;
+}
+
 .right {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.html-grid{
+  display:grid;
+  /* grid-template-columns: 10px 10px 100px; */
+  height: 100px;
+  width:165px;
+  column-gap: 5px;
+  row-gap: 2px;
+}
+
+.html-grid-row{
+  display:grid;
+  grid-template-columns: 17px 4px 15px 135px; 
+}
+
+.html-grid-row:hover{
+  background: rgb(55,55,61)
+}
+
 
