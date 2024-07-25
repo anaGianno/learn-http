@@ -28,6 +28,10 @@
   cursor:pointer
 }
 
+.html-grid-row:hover{
+  cursor:pointer
+}
+
 .special1 .arrow{
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -38,16 +42,39 @@
   -webkit-transform: rotate(-45deg);
 }
 
+.specialShowFiles .html-grid{
+  row-gap: 50px;
+}
+
+.specialHideFiles .html-grid{
+  row-gap: 2px;
+}
+
+.specialShowBlue .html-grid-row{
+  border-width:1px;
+  border-style:solid;
+  border-color:rgb(0,120,212);
+  background:rgb(4,57,94)
+}
+
+.specialShowGray .html-grid-row{
+  border-width:1px;
+  border-style:solid;
+  border-color:rgb(24,24,24);
+  background-color: rgb(24,24,24);
+}
+
+
 .learn-http{
     display:inline-block;
     font-weight:bold;
+    padding-top:4px;
 }
 
 .sidebar-text{
   display:inline-block;
   font-family: 'Cascadia Code', sans-serif;
   font-size:12px;
-  padding-top:4px;
   color:rgb(204,204,204);
   user-select: none;
 }
@@ -56,7 +83,9 @@
   border: solid white;
   border-width: 0 1px 1px 0;
   display: inline-block;
-  padding: 3px;
+  padding: 2px;
+  margin-bottom:1px;
+  margin-left:2px;
 }
 
 .orange-arrow {
@@ -65,6 +94,7 @@
   border-width: 0 1px 1px 0;
   display: inline-block;
   padding: 2px;
+  margin-bottom:5px;
 }
 
 .right {
@@ -83,16 +113,29 @@
   height: 100px;
   width:165px;
   column-gap: 5px;
-  row-gap: 2px;
+
 }
 
 .html-grid-row{
   display:grid;
-  grid-template-columns: 17px 4px 15px 135px; 
+  grid-template-columns: 17px 4px 15px 132px; 
+  padding-top:3px;
+  border-width:1px;
+  border-style:solid;
+  border-color:rgb(24,24,24);
+  background-color: rgb(24,24,24);
 }
 
 .html-grid-row:hover{
+  border-color:rgb(55,55,61);
   background: rgb(55,55,61)
 }
+
+/* .html-grid-row:active{
+  border-width:1px;
+  border-style:solid;
+  border-color:rgb(0,120,212);
+  background:rgb(4,57,94)
+} */
 
 
