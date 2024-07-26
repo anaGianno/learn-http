@@ -35,3 +35,10 @@ mainRow.addEventListener('click',() => {
 //   subRowList[x].onclick= ch;
 //   console.log("c")
 // }
+
+let p = document.querySelector('.learn-http-grid');
+
+function toggleClass(){
+  p.classList.toggle('specialanimation');
+  console.log("c")
+}

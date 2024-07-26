@@ -112,16 +112,13 @@
 }
 
 .html-grid{
-  border-width:1px;
-  /* border-style:solid;
-  border-color:rgb(0,120,212);
-  background:rgb(4,57,94); */
   display:grid;
   /* grid-template-columns: 10px 10px 100px; */
   height: 120px;
   width:168px;
   column-gap: 5px;
-  /* margin-top:-200px; */
+  margin-top:-200px;
+  transition: margin-top 0.25s;
 }
 
 .html-grid-row{
@@ -152,12 +149,13 @@
   border-color:rgb(0,120,212);
 }
 
-/* .learn-http-grid:focus .html-grid{
-  border-style:solid;
-  border-color:rgb(255,0,0);
-  background:rgb(4,57,94);
+/* .learn-http-grid:focus + .html-grid{
+  margin-top:0px;
 } */
 
+.specialanimation + .html-grid{
+  margin-top:0px;
+}
 
 .learn-http-grid:active{
   border-width:1px;
