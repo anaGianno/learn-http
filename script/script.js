@@ -16,8 +16,22 @@ mainRow.addEventListener('click',() => {
   }
 });
 
-const subRow = document.querySelector('.html-grid-row')
-subRow.addEventListener('click',() => {
-  document.querySelector('.specialShowBlue')?.classList.remove('specialShowBlue');
-  subRow.classList.add('specialShowBlue')
-});
+// const subRow = document.querySelector('.html-grid-row');
+// const subRowList = document.querySelectorAll('.html-grid-row');
+
+// subRowList.forEach(subRow => {
+//   subRow.addEventListener('click', () => {
+//     subRow.classList.toggle('specialb');
+//     console.log("c")
+//  });
+// });
+
+// function ch(){
+//   this.classList.toggle('specialb');
+// }
+
+// var subRowList = document.querySelectorAll('.html-grid-row');
+// for(var x = subRowList.length -1; x>=0;x--){
+//   subRowList[x].onclick= ch;
+//   console.log("c")
+// }

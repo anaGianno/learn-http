@@ -15,11 +15,15 @@
 
 .learn-http-grid{
   display:grid;
+  background-color: solid white;
+  border-width:1px;
+  border-style:solid;
+  border-color: rgb(24,24,24);
   grid-template-columns: 10px 100px;
   padding-left:5px;
   padding-right:0px;
   height: 22px;
-  width:165px;
+  width:163px;
   column-gap: 5px;
   row-gap:100px;
 }
@@ -50,7 +54,7 @@
   row-gap: 2px;
 }
 
-.specialShowBlue .html-grid-row{
+.specialb .html-grid-row{
   border-width:1px;
   border-style:solid;
   border-color:rgb(0,120,212);
@@ -108,12 +112,16 @@
 }
 
 .html-grid{
+  border-width:1px;
+  /* border-style:solid;
+  border-color:rgb(0,120,212);
+  background:rgb(4,57,94); */
   display:grid;
   /* grid-template-columns: 10px 10px 100px; */
-  height: 100px;
-  width:165px;
+  height: 120px;
+  width:168px;
   column-gap: 5px;
-
+  /* margin-top:-200px; */
 }
 
 .html-grid-row{
@@ -131,11 +139,28 @@
   background: rgb(55,55,61)
 }
 
-/* .html-grid-row:active{
+.html-grid-row:focus{
   border-width:1px;
   border-style:solid;
   border-color:rgb(0,120,212);
   background:rgb(4,57,94)
+}
+
+.learn-http-grid:focus{
+  border-width:1px;
+  border-style:solid;
+  border-color:rgb(0,120,212);
+}
+
+/* .learn-http-grid:focus .html-grid{
+  border-style:solid;
+  border-color:rgb(255,0,0);
+  background:rgb(4,57,94);
 } */
 
 
+.learn-http-grid:active{
+  border-width:1px;
+  border-style:solid;
+  border-color: rgb(24,24,24);
+}
