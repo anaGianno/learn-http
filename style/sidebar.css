@@ -14,6 +14,8 @@
 }
 
 .learn-http-grid{
+  position:absoulute;
+  padding-bottom:1px;
   display:grid;
   background-color: solid white;
   border-width:1px;
@@ -112,12 +114,12 @@
 }
 
 .html-grid{
+  position:fixed;
   display:grid;
   /* grid-template-columns: 10px 10px 100px; */
   height: 120px;
   width:168px;
   column-gap: 5px;
-  margin-top:-200px;
   transition: margin-top 0.25s;
 }
 
@@ -153,12 +155,23 @@
   margin-top:0px;
 } */
 
-.specialanimation + .html-grid{
-  margin-top:0px;
+.specialanimation ~ .row-blocker{
+  margin-top:120px;
 }
 
-.learn-http-grid:active{
-  border-width:1px;
-  border-style:solid;
-  border-color: rgb(24,24,24);
+/* .learn-http-grid:active{
+  margin-top:-50px;
+} */
+
+.row-blocker{
+  z-index: 1;
+  position:absolute;
+  width:170px;
+  height:200px;
+  display:inline-block;
+  transition: margin-top 0.15s;
+  border-top-width:1px;
+  border-top-style:solid;
+  border-top-color:rgb(43,43,43);
+  background: rgb(24,24,24)
 }
