@@ -13,6 +13,10 @@
 		border-color: rgb(43,43,43);
 }
 
+.sidebar:focus{
+    border-color:rgb(0,120,212);
+}
+
 .learn-http-grid{
   position:absoulute;
   padding-bottom:0.125rem;
@@ -37,13 +41,13 @@
 }
 
 .special1 .arrow{
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
 
 .speciala .arrow{
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
 
 .specialb .html-grid-row{
@@ -61,10 +65,11 @@
 }
 
 .sidebar-text{
-  margin-top:0.075rem;
+  margin-top:0.01rem;
   display:inline-block;
-  font-family: 'Cascadia Code', sans-serif;
-  font-size:12px;
+  /* font-family: 'Cascadia Code', sans-serif; */
+  font-family: "Ubuntu", sans-serif;
+  font-size:13px;
   color:rgb(204,204,204);
   user-select: none;
 }
@@ -98,6 +103,11 @@
   -webkit-transform: rotate(135deg);
 }
 
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
 .html-grid{
   position:fixed;
   display:grid;
@@ -118,16 +128,16 @@
 }
 
 .html-grid-row:hover{
-  border-color:rgb(55,55,61);
-  background: rgb(55,55,61)
+  border-color:rgb(42,45,46);
+  background: rgb(42,45,46)
 }
 
-.html-grid-row:focus{
+/* .html-grid-row:focus{
   border-width:1px;
   border-style:solid;
   border-color:rgb(0,120,212);
   background:rgb(4,57,94)
-}
+} */
 
 .learn-http-grid:focus{
   border-width:1px;
@@ -135,12 +145,8 @@
   border-color:rgb(0,120,212);
 }
 
-/* .learn-http-grid:focus + .html-grid{
-  margin-top:0px;
-} */
-
 .specialanimation ~ .row-blocker{
-  margin-top:10rem;
+  margin-top:0;
 }
 
 .learn-http-grid:active{
@@ -153,6 +159,7 @@
   width:11rem;
   height:11rem;
   display:inline-block;
+  margin-top:7.5rem;
   transition: margin-top 0.125s;
   border-top-width:1px;
   border-top-style:solid;
