@@ -20,3 +20,18 @@
     color:rgb(204,204,204);
     user-select: none;
 }
+
+.grid-img{
+	width:100rem;
+  position:absoulute;
+  display:grid;
+  grid-template-columns: 20rem 75rem;
+	column-gap:5rem;
+}
+
+.img-text{
+	z-index:0;
+	width:75rem;
+	height:25rem;
+	/* background-color:rgb(255,0,0); */
+}

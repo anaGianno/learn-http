@@ -1,6 +1,7 @@
 p{
   margin-top: 0;
   margin-bottom:0;
+  display:inline-block;
 }
 
 body{
@@ -24,7 +25,17 @@ h1{
  }
 
 img{
-  width:10rem;
-  height:10rem;
-  padding-top:20rem;
+  display: inline-block;
+  border-radius:2.5%;
+  width:20rem;
+  height:auto; 
+  filter: grayscale(100%) sepia(100%) hue-rotate(70deg) 
+  brightness(50%);
+  /* color:hsl(101, 26%, 46%) */
+}
+
+li{
+  font-family: 'Cascadia Code', sans-serif;
+  font-size:13px; 
+  color:rgb(106,153,85);
 }
