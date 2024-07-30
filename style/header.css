@@ -7,7 +7,7 @@
     right: 0;
     bottom: 0;
     width:100vw;
-    height:1rem;
+    height:1.25rem;
 }
 
 .header-grid{
@@ -28,3 +28,14 @@
     color:rgb(204,204,204);
     user-select: none;
   }
+
+.arrow-dot{
+    margin-top:-0.2rem;
+    display:inline-block;
+    height:1.25;
+    width:2rem;
+}
+
+/* 
+
+*/

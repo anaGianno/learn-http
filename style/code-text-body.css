@@ -1,0 +1,20 @@
+.code-text-body{
+    width:100vw;
+    height:200rem;
+    padding-top:1.25rem;
+    /* background:rgb(0,0,255) */
+}
+
+.code-text-comment{
+    display:inline-block;
+    font-family: 'Cascadia Code', sans-serif;
+    font-size:13px;
+    color:rgb(90, 145, 69);
+    user-select: none;
+}
+
+.code-text{
+    font-family: 'Cascadia Code', sans-serif;
+    color:rgb(189, 108, 61);
+    user-select: none;
+}
