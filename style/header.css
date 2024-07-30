@@ -1,0 +1,30 @@
+.header{
+    position:fixed;
+    z-index: 1;
+    
+    top: 0;
+    left: 11rem;
+    right: 0;
+    bottom: 0;
+    width:100vw;
+    height:1rem;
+}
+
+.header-grid{
+    padding-top:0.3rem;
+    position:absoulute;
+    display:grid;
+    background: rgb(31,31,31);
+    grid-template-columns: 0.9rem 0.15rem 0.75rem 6rem 1rem 0.3rem;
+    height: 1.25rem;
+    padding-left:0.5rem;
+}
+
+.header-text{
+    display:inline-block;
+    /* font-family: 'Cascadia Code', sans-serif; */
+    font-family: "Ubuntu", sans-serif;
+    font-size:13px;
+    color:rgb(204,204,204);
+    user-select: none;
+  }

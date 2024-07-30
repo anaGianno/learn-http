@@ -1,16 +1,16 @@
 .sidebar{
-    position:fixed;
-    z-index: 1;
+  position:fixed;
+  z-index: 1;
   
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width:11rem;
-    background-color: rgb(24,24,24);
-		border-width:1px;
-		border-style:solid;
-		border-color: rgb(43,43,43);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width:11rem;
+  background-color: rgb(24,24,24);
+	border-width:1px;
+	border-style:solid;
+	border-color: rgb(43,43,43);
 }
 
 .sidebar:focus{
@@ -159,7 +159,7 @@
   width:11rem;
   height:11rem;
   display:inline-block;
-  margin-top:7.5rem;
+  margin-top:7.8rem;
   transition: margin-top 0.125s;
   border-top-width:1px;
   border-top-style:solid;
