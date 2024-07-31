@@ -35,3 +35,7 @@
 	height:25rem;
 	/* background-color:rgb(255,0,0); */
 }
+
+.grid-img:active img{
+    filter: grayscale(0%) sepia(0%) hue-rotate(0deg) 
+}

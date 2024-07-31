@@ -74,6 +74,7 @@
 
 		</div>
 
+				<!-- This text is sourced from COMPX222 Assignment1.pdf  -->
 		<div class="code-text-body">
 			<h1 class = "code-text">
 				<span style ="color:rgb(128,128,128)">&#60;</span><span style ="color:rgb(54,140,214)">h1</span><span style ="color:rgb(128,128,128)">&#62;</span>COMPX222 Assignment 1<span style ="color:rgb(128,128,128)">&#60;</span><span style ="color:rgb(54,140,214)">/h1</span><span style ="color:rgb(128,128,128)">&#62;</span>
@@ -132,14 +133,17 @@
 			<p class= "code-text-comment">Each page (other than the home page) should have approximately 400 words of content on
 				average. Additionally, there should also be a way of navigating the site so that all pages are
 				reachable from any one page.
-			</p><br><br>
+			</p><br>
+
+			<p class = "code-text-comment">&#45;&dash;&#62;</p>
 
 			<div class="grid-img">
 				<!-- <div style = "background-color:rgb(0,255,0);height:26.5rem;"> -->
-				<div style = "height:26.5rem;">
+				<!-- <div style = "height:26.5rem;"> -->
 					<img src = image/goat-cat2.jpg>
-				</div>
+				<!-- </div> -->
 				<div class = "img-text">
+					<p class = "code-text-comment">&#60;&#33;&dash;&dash;</p><br>
 					<p class= "code-text-comment">
 						Each page should display at least one image. The images can be drawn by you, or
 						downloaded provided they have a creative commons licence (see Images → Tools → Usage
@@ -149,15 +153,119 @@
 						your website with a 1080p monitor (1920x1080). You will need to create the versions of the
 						images yourself.
 					</p>
+					<p class = "code-text-comment">&#45;&dash;&#62;</p>
 				</div>
 			</div>
 				
-			<p class = "code-text-comment">&#45;&dash;&#62;</p>
 
 			<h4 class = "code-text">
 				<span style ="color:rgb(128,128,128)">&#60;</span><span style ="color:rgb(54,140,214)">h4</span><span style ="color:rgb(128,128,128)">&#62;</span>Implementation<span style ="color:rgb(128,128,128)">&#60;</span><span style ="color:rgb(54,140,214)">/h4</span><span style ="color:rgb(128,128,128)">&#62;</span>
 			</h4>
+
+			<p class = "code-text-comment">&#60;&#33;&dash;&dash;</p><br>
+			<ul>
+				<li>Ensure that you meet the following technical requirements:</li>
+				<li>The website is organised properly into appropriate folders.</li>
+				<li>The default page for the website is index.html, which is located in the root of the website.</li>
+				<li>The style is completely separated from the content; this means there is a common
+					style.css file that is linked to from all the html pages, and when this link is commented
+					out, then the pages revert to a plain vanilla HTML style.</li>
+				<li>Ensure that the following HTML elements are used and also styled suitably:</li>
+				<ul>
+					<li>Headings tags (at least two levels)</li>
+					<li>Paragraph tags</li>
+					<li>Divs (to divide each page into logical sections)</li>
+					<li>Bulleted lists</li>
+					<li>
+						<table>
+							<tr>
+								<th>At</th>
+								<th>Least</th>
+								<th>One</th>
+								<th>Table</th>
+							</tr>
+							<tr>
+								<td>At</td>
+								<td>Least</td>
+								<td>One</td>
+								<td>Table</td>
+							</tr>
+							<tr>
+								<td>At</td>
+								<td>Least</td>
+								<td>One</td>
+								<td>Table</td>
+							</tr>
+							<tr>
+								<td>At</td>
+								<td>Least</td>
+								<td>One</td>
+								<td>Table</td>
+							</tr>
+						</table> 
+					</li>
+					<li>Atleast two span tags</li>
+				</ul>
+			</ul>
+
+			<p class= "code-text-comment">In each case, it’s up to you to ensure that the use of this HTML element makes sense
+				and also to make it very clear where it is used so that we won’t miss it when
+				marking.
+			</p><br>
+
+			<ul>
+				<li>Ensure that at least the following CSS elements are used in the style:</li>
+				<ul>
+					<li>A CSS grid</li>
+					<li>A CSS selector of the form element1 element2</li>
+					<li>A CSS selector of the form element1>element2</li>
+				</ul>
+				<li>For the images, we will use a responsive approach. Each image should have three
+					variants (narrow, medium, wide), and the browser should automatically select the
+					variant depending on how wide the page is.</li>
+			</ul>
+
+			<p class = "code-text-comment">&#45;&dash;&#62;</p>
+
+			<h4 class = "code-text">
+				<span style ="color:rgb(128,128,128)">&#60;</span><span style ="color:rgb(54,140,214)">h4</span><span style ="color:rgb(128,128,128)">&#62;</span>Marking<span style ="color:rgb(128,128,128)">&#60;</span><span style ="color:rgb(54,140,214)">/h4</span><span style ="color:rgb(128,128,128)">&#62;</span>
+			</h4>
+
+			<p class = "code-text-comment">&#60;&#33;&dash;&dash;</p><br>
+
+			<p class= "code-text-comment">Marks will be allocated as follows:</p>
+
+			<ul>
+				<li>Validated HTML (proper indentation/layout and commenting of HTML code) 20%</li>
+				<li>Validated CSS (proper indentation/layout and commenting of CSS code, and
+					use of appropriate selectors) 15%</li>
+				<li>Sensible folder structure to organise site resources 5%</li>
+				<li>Home Page 5%</li>
+				<li>What is HTTP and HTTPS page 10%</li>
+				<li>How is a web page downloaded page 10%</li>
+				<li>What is a request page 10%</li>
+				<li>When to use GET and POST page 10%</li>
+				<li>Required HTML and CSS 10%</li>
+			</ul>
+
+			<p class= "code-text-comment">You may assume we will test your website in the R block Linux labs using Firefox. Make
+				sure that your use of each of the required HTML/CSS elements is obvious so we can ensure
+				nothing is missed.
+			</p><br>
+
+			<p class = "code-text-comment">&#45;&dash;&#62;</p>
+
+			<h4 class = "code-text">
+				<span style ="color:rgb(128,128,128)">&#60;</span><span style ="color:rgb(54,140,214)">h4</span><span style ="color:rgb(128,128,128)">&#62;</span>Submission<span style ="color:rgb(128,128,128)">&#60;</span><span style ="color:rgb(54,140,214)">/h4</span><span style ="color:rgb(128,128,128)">&#62;</span>
+			</h4>
+
+			<p class = "code-text-comment">&#60;&#33;&dash;&dash;</p><br>
+
+			<p class= "code-text-comment">Please zip your website up into a single file and submit it via Moodle before the due date.</p><br>
+
+			<p class = "code-text-comment">&#45;&dash;&#62;</p>
 		</div>
+
 
 		<script src = "script/script.js"></script>
   </body>
