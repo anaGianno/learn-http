@@ -7,8 +7,10 @@ p{
 body{
   margin: 0;
   background: rgb(31,31,31);
+  /* height: 100vh;
+  width: 100vw; */
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   padding-left: 11.1rem;
 }
   
@@ -27,11 +29,12 @@ h1{
 img{
   display: inline-block;
   border-radius:2.5%;
-  width:20rem;
-  height:auto; 
+  width:auto;
+  height:30rem; 
   filter: grayscale(100%) sepia(100%) hue-rotate(70deg) 
   brightness(50%);
   transition: filter 0.1s;
+  user-select: none;
 }
 
 li{

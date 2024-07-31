@@ -22,17 +22,19 @@
 }
 
 .grid-img{
-	width:100rem;
+	width:75rem;
   position:absoulute;
   display:grid;
-  grid-template-columns: 20rem 75rem;
+  grid-template-columns: 20rem 50rem;
 	column-gap:5rem;
+    padding-left:22.5rem;
 }
 
 .img-text{
 	z-index:0;
-	width:75rem;
-	height:25rem;
+	width:25rem;
+	height:22rem;
+    padding-top:5rem;
 	/* background-color:rgb(255,0,0); */
 }
 
