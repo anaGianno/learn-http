@@ -80,13 +80,21 @@
 			<div class = "img-text">
 				<p class = "code-text-comment">&#60;&#33;&dash;&dash;</p><br>
 				<p class= "code-text-comment">
-					Each page should display at least one image. The images can be drawn by you, or
-					downloaded provided they have a creative commons licence (see Images → Tools → Usage
-					Rights when using Google image search). The catch is that you must provide three versions
-					of each image: a narrow version for small phones, a medium version for narrow windows on
-					a monitor, and a large version for when the browser is stretched very wide. We will test
-					your website with a 1080p monitor (1920x1080). You will need to create the versions of the
-					images yourself.
+					“How is a web page downloaded?” – use your browser’s network console to load a webpage, and then analyse the sequence of HTTP requests made when loading the page; make this page an annotated explanation of this trace; use a page with a relatively small number of requests (e.g. 10-20) and make sure it has a mixture of images and text files such as style files that are loaded 
+
+Request for HTML Document: Request URL: ‘http://127.0.0.1:5500/index.html/. Type: Document. Response: 200 OK.
+Request for Font: Request URL: ‘https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap’. Type: Font. Response: 200 OK.
+Request for Font: Request URL: ‘https://fonts.cdnfonts.com/css/cascadia-code‘. Type: Font. Response: 200 OK.
+Request for CSS StyleSheet: Request URL: ‘http://127.0.0.1:5500/style/general.css’. Type: Stylesheet. Response: 200 OK.
+Request for CSS StyleSheet: Request URL: ‘http://127.0.0.1:5500/style/sidebar.css’. Type: Stylesheet. Response: 200 OK.
+Request for CSS StyleSheet: Request URL: ‘http://127.0.0.1:5500/style/header.css’. Type: Stylesheet. Response: 200 OK.
+Request for CSS StyleSheet: Request URL: ‘http://127.0.0.1:5500/style/code-text-body.css’. Type: Stylesheet. Response: 200 OK.
+Request for image file: Request URL: ‘http://127.0.0.1:5500/image/goat-cat2.jpg’. Type :Image. Response: 200 OK.
+Request for JavaScript File: Request URL: ‘ws://127.0.0.1:5500/script/script.js. Type: Script. Response: 200 OK.
+Request for Font: Request URL: ‘https://fonts.gstatic.com/s/ubuntu/v20/4iCs6KVjbNBYlgoKfw72.woff2’. Type: Font. Response: 200 OK.
+Request for Font: Request URL: ‘https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoCxCvjsGyN.woff2’. Type: Font. Response: 200 OK.
+Using this web page as an example, here’s an analysis of the sequence of HTTP requests that are made when loading the page. First the browser starts off with a request for this HTML document web-page.html, using the GET method. This html file has all the main structure of the page like the text, images and so forth. It also references other resources that will be used on the html such as CSS styling and JavaScript interaction. Next, the browser requests all the CSS style sheets to be used to make this web page look pretty. For this page, it first requests for the css of the text fonts that I imported in, one for the font of the sidebar and header and one for the font of the code that you’re reading right now. Then comes the rest of the CSS files that I used for this assignment, which are called header.css, general.css, sidebar.css and code-text-body.css. Now our webpage is fully styled and looking nice for the customer. Next comes the request for the image files. For my webpage I only have 1 image per page so it's just one jpeg file. Next is the request for the JavaScript file. I used JavaScript in this assignment so I could make the user experience better, by making the sidebar feel better to use so the customer has positive experience navigating my website. If you couldn’t tell already, I tried to make the user interface that is implemented in Visual Studio code. 
+
 				</p>
 				<p class = "code-text-comment">&#45;&dash;&#62;</p>
 			</div>

@@ -3,17 +3,20 @@
   <head>
 		<title>LearnHTTP</title>
 
+		<!-- add fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 		
 		<link href="https://fonts.cdnfonts.com/css/cascadia-code" rel="stylesheet">
 		
+		<!-- link CSS stylesheets for use -->
 		<link rel="stylesheet" href = "style/general.css">
 		<link rel="stylesheet" href = "style/sidebar.css">
 		<link rel="stylesheet" href = "style/header.css">
 		<link rel="stylesheet" href = "style/code-text-body.css">
   <body>
+		<!-- this header div shows what page the user is on -->
 		<div class = "header">
 			<div class = "header-grid" tabindex="1">
 				<p></p>
@@ -27,13 +30,17 @@
 			</div>
 		</div>
 
+		<!-- this sidebar div is used for navigation of pages -->
 		<div class = "sidebar" tabindex="1">
+			<!-- grid for title -->
 			<div class = "learn-http-grid" tabindex="1" onclick="toggleClass()">
 				<p><i class="arrow down"></i></p>
 				<p class = "sidebar-text learn-http">LEARN-HTTP</p>
 			</div>
 
+			<!-- grid for the pages that the user can navigate to -->
 			<div class = "html-grid">
+				<!-- one row for each page -->
 				<div class = "html-grid-row" tabindex="1">
 					<p></p>
 					<p><i class="orange-arrow left"></i></p>
@@ -70,12 +77,14 @@
 				</div>
 			</div>
 
+			<!-- this div is used to cover the page navigation with transitions -->
 			<div class = "row-blocker"></div>
 
 		</div>
+			<!-- this div is used for the body of the page, and the following text is sourced from COMPX222 Assignment1.pdf  -->
+			<div class="code-text-body">
 
-				<!-- This text is sourced from COMPX222 Assignment1.pdf  -->
-		<div class="code-text-body">
+			<!-- implement spans and headers with seperate colors -->
 			<h1 class = "code-text">
 				<span style ="color:rgb(128,128,128)">&#60;</span><span style ="color:rgb(54,140,214)">h1</span><span style ="color:rgb(128,128,128)">&#62;</span>COMPX222 Assignment 1<span style ="color:rgb(128,128,128)">&#60;</span><span style ="color:rgb(54,140,214)">/h1</span><span style ="color:rgb(128,128,128)">&#62;</span>
 			</h1>
@@ -88,6 +97,7 @@
 				<span style ="color:rgb(128,128,128)">&#60;</span><span style ="color:rgb(54,140,214)">h4</span><span style ="color:rgb(128,128,128)">&#62;</span>Due: 2 August 2024, 11:59 PM.<span style ="color:rgb(128,128,128)">&#60;</span><span style ="color:rgb(54,140,214)">/h4</span><span style ="color:rgb(128,128,128)">&#62;</span>
 			</h4>
 
+			<!-- illusion of a comment on the page -->
 			<p class = "code-text-comment">&#60;&#33;&dash;&dash;</p><br>
 
 			<p class = "code-text-comment">For this assignment you will create a static website using HTML and CSS. The aim is to code
@@ -137,6 +147,7 @@
 
 			<p class = "code-text-comment">&#45;&dash;&#62;</p>
 
+			<!-- this div is used to space the image and the image text from eachother -->
 			<div class="grid-img">
 					<img src = image/goat-cat2.jpg class = "img-only">
 				<div class = "img-text">
@@ -160,6 +171,8 @@
 			</h4>
 
 			<p class = "code-text-comment">&#60;&#33;&dash;&dash;</p><br>
+
+			<!-- this unordered list has a table and a nested unordered list inside -->
 			<ul>
 				<li>Ensure that you meet the following technical requirements:</li>
 				<li>The website is organised properly into appropriate folders.</li>
@@ -263,7 +276,7 @@
 			<p class = "code-text-comment" style = "padding-bottom:2.5rem;">&#45;&dash;&#62;</p>
 		</div>
 
-
+		<!-- implement the JavaScript code -->
 		<script src = "script/script.js"></script>
   </body>
 </html>
