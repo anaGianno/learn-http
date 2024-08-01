@@ -10,7 +10,7 @@ body{
   /* height: 100vh;
   width: 100vw; */
   height: 100vh;
-  width: 100%;
+  width: 80%;
   padding-left: 11.1rem;
 }
   
@@ -30,7 +30,7 @@ img{
   display: inline-block;
   border-radius:2.5%;
   width:auto;
-  height:30rem; 
+  height:40rem; 
   filter: grayscale(100%) sepia(100%) hue-rotate(70deg) 
   brightness(50%);
   transition: filter 0.1s;

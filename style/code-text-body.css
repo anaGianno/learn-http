@@ -1,6 +1,6 @@
 .code-text-body{
-    width:100rem;
-    height:200rem;
+    height: 100vh;
+    width: 95%;
     padding-top:2rem;
     margin-left:1rem;
     /* background:rgb(0,0,255) */
@@ -22,22 +22,107 @@
 }
 
 .grid-img{
-	width:75rem;
-  position:absoulute;
+  height:auto;
+	/* width:75rem; */
+	width:75%;
   display:grid;
-  grid-template-columns: 20rem 50rem;
+  grid-template-columns: 30rem 20rem;
 	column-gap:5rem;
-    padding-left:22.5rem;
+  padding-left:25rem;
+	padding-top:2rem;
+	padding-bottom:2rem;
 }
 
 .img-text{
-	z-index:0;
-	width:25rem;
-	height:22rem;
-    padding-top:5rem;
+	width:auto;
+	height:30rem;
+  padding-top:10rem;
 	/* background-color:rgb(255,0,0); */
 }
 
 .grid-img:active img{
     filter: grayscale(0%) sepia(0%) hue-rotate(0deg) 
 }
+
+@media (max-width: 650px) {
+	.img-text{
+		height:17.5rem;
+		padding-top:0; 
+		padding-bottom:1rem;
+		/* background-color:rgb(255,0,0); */
+	}
+	.img-only{
+    height: 20rem;
+  }
+	.grid-img{
+		grid-template-columns: 15rem;
+		column-gap:0;
+		padding-left:1rem;
+		row-gap:1rem;
+	}
+	.code-text-body{
+    width: 65%;
+	}
+}
+
+@media (min-width: 651px) and (max-width: 925px) {
+	.img-text{
+		height:10rem;
+		padding-top:1rem; 
+		padding-bottom:1rem;
+		/* background-color:rgb(255,0,0); */
+	}
+	.img-only{
+    height: 30rem;
+  }
+	.grid-img{
+		/* grid-template-columns: 25rem 15rem; */
+		grid-template-columns: 25rem;
+		column-gap:0;
+		padding-left:2.5rem;
+	}
+	.code-text-body{
+    width: 80%;
+	}
+}
+
+@media (min-width: 926px) and (max-width: 1200px) {
+	.img-text{
+		height:25rem;
+		padding-top:5rem; 
+		/* background-color:rgb(255,0,0); */
+	}
+	.img-only{
+    height: 30rem;
+  }
+	.grid-img{
+		/* grid-template-columns: 25rem 15rem; */
+		grid-template-columns: 25rem 15rem;
+		column-gap:1.5rem;
+		padding-left:2.5rem;
+	}
+	.code-text-body{
+    width: 85%;
+	}
+}
+
+@media (min-width: 1201px) and (max-width: 1500px) {
+	.img-text{
+		height:25rem;
+		padding-top:5rem; 
+		/* background-color:rgb(255,0,0); */
+	}
+	.img-only{
+    height: 30rem;
+  }
+	.grid-img{
+		/* grid-template-columns: 25rem 15rem; */
+		grid-template-columns: 25rem 15rem;
+		column-gap:1.5rem;
+		padding-left:15rem;
+	}
+	.code-text-body{
+    width: 90%;
+	}
+}
+
