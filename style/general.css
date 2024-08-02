@@ -29,12 +29,13 @@ h1{
 img{
   display: inline-block;
   border-radius:2.5%;
-  width:auto;
-  height:40rem; 
+  max-width:50rem;
+  height:auto; 
   filter: grayscale(100%) sepia(100%) hue-rotate(70deg) 
   brightness(50%);
   transition: filter 0.1s;
   user-select: none;
+  vertical-align: middle;
 }
 
 li{
