@@ -1,8 +1,8 @@
+/* div for all other elements in the header */
 .header{
     box-shadow:0px 4px 10px black;
     position:fixed;
     z-index: 1;
-    
     top: 0;
     left: 11rem;
     right: 0;
@@ -11,6 +11,7 @@
     height:1.25rem;
 }
 
+/* grid to space all other elements in header */
 .header-grid{
     padding-top:0.3rem;
     position:absoulute;
@@ -21,22 +22,19 @@
     padding-left:0.5rem;
 }
 
+/* set style for header's text */
 .header-text{
     display:inline-block;
-    /* font-family: 'Cascadia Code', sans-serif; */
     font-family: "Ubuntu", sans-serif;
     font-size:13px;
     color:rgb(204,204,204);
     user-select: none;
-  }
+}
 
+/* space dots in grid */
 .arrow-dot{
     margin-top:-0.2rem;
     display:inline-block;
     height:1.25;
     width:2rem;
 }
-
-/* 
-
-*/

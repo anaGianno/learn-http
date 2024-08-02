@@ -3,17 +3,20 @@
   <head>
 		<title>LearnHTTP</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+		<!-- add fonts -->
+   	<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
 		<link href="https://fonts.cdnfonts.com/css/cascadia-code" rel="stylesheet">
 
+		<!-- link CSS stylesheets for use -->
 		<link rel="stylesheet" href = "style/general.css">
 		<link rel="stylesheet" href = "style/sidebar.css">
 		<link rel="stylesheet" href = "style/header.css">
 		<link rel="stylesheet" href = "style/code-text-body.css">
   <body>
+		<!-- this header div shows what page the user is on -->
 		<div class = "header">
 			<div class = "header-grid" tabindex="1">
 				<p></p>
@@ -24,20 +27,22 @@
 					<p style = "margin-top:-0.2rem;display:inline-block" ><i class="arrow right"></i></p>
 					<p class = "header-text">...</p>
 				</div>
-
 			</div>
 		</div>
 
-
+		<!-- this sidebar div is used for navigation of pages -->
 		<div class = "sidebar" tabindex="1">
+			<!-- grid for title -->
 			<div class = "learn-http-grid" tabindex="1" onclick="toggleClass()">
 				<p><i class="arrow down"></i></p>
 				<p class = "sidebar-text learn-http">LEARN-HTTP</p>
 			</div>
 
-
+			<!-- grid for the pages that the user can navigate to -->
 			<div class = "html-grid">
+				<!-- one row for each page -->
 				<div class = "html-grid-row" tabindex="1" style = "border-color:rgb(0,120,212);background:rgb(4,57,94)">
+					<!-- add empty paragrpah tag to accomodate grid, add arrows and text -->
 					<p></p>
 					<p><i class="orange-arrow left"></i></p>
 					<p><i class="orange-arrow right"></i></p>
@@ -73,37 +78,42 @@
 				</div>
 			</div>
 
+			<!-- this div is used to cover the page navigation with transitions -->
 			<div class = "row-blocker"></div>
 		</div>
 
+		<!-- this div is used for the body of the page-->
 		<div class="code-text-body">
 			<div class="grid-img grid-secondary">
 				<img src = image/get-post.jpg class = "img-secondary">
+				<!-- add text and comments -->
 				<div class = "img-text txt-secondary">
-				<p class = "code-text-comment">&#60;&#33;&dash;&dash;</p><br>
-				<p class= "code-text-comment txt-img">
-					“When to use GET and POST?” – explain when and why you use one type of request and not the other <br><br>
-					Quick summary on some common HTTP methods: For the client to interact with the server in different ways,
-					 there are HTTP request methods; and here are a few. The GET method retrieves data from the server. The 
-					 HEAD method is very similar to the GET method, retrieves data from the server; but only the header information 
-					 of the server’s response; not the body information. The POST method submits data to the server. The PUT method
-					  updates a resource currently on the server. GET should be used to retrieve or fetch data from a server. It is
-					   best used for simple querying and getting resources. Other times GET should be used are for idempotency,
-					    bookmarking and caching and performance.POST should be used to send necessary data to the server which will 
+					<p class = "code-text-comment">&#60;&#33;&dash;&dash;</p><br>
+					<p class= "code-text-comment txt-img">
+						“When to use GET and POST?” – explain when and why you use one type of request and not the other <br><br>
+						Quick summary on some common HTTP methods: For the client to interact with the server in different ways,
+						there are HTTP request methods; and here are a few. The GET method retrieves data from the server. The 
+						HEAD method is very similar to the GET method, retrieves data from the server; but only the header information 
+						of the server’s response; not the body information. The POST method submits data to the server. The PUT method
+						updates a resource currently on the server. <br><br>	  
+						GET should be used to retrieve or fetch data from a server. It is
+						best used for simple querying and getting resources. Other times GET should be used are for idempotency,
+						bookmarking and caching and performance.POST should be used to send necessary data to the server which will 
 						either modify the state of the server or handle some sensitive information. Another times POST should be used 
 						are for large data payloads, non idempotent operations and complex data structures.GET should not be used to do POST’s 
 						job of handling sensitive information as it could be easy to find through server logs, browser history or referrer headers. 
 						GET is also not suitable for large data payloads as URL lengths often have a limit of 2000 characters. GET should also not
-						 modify the server state or alter data on the server. POST should not do GET’s job of bookmarking and caching as POST requests
-						  are not cacheable and cannot be bookmarked. POST should not be used for performance considerations as they are relatively slower
-						   than GET methods due to their inclusion of a request body; compared to GET’s simple data retrieval tasks.
-
-				</p>
-				<p class = "code-text-comment">&#45;&dash;&#62;</p>
+						modify the server state or alter data on the server. POST should not do GET’s job of bookmarking and caching as POST requests 
+						are not cacheable and cannot be bookmarked. POST should not be used for performance considerations as they are relatively slower
+						than GET methods due to their inclusion of a request body; compared to GET’s simple data retrieval tasks.
+					</p>
+					<p class = "code-text-comment">&#45;&dash;&#62;</p>
 			</div>
 		</div>
 			
 		</div>
+		
+		<!-- implement the JavaScript (animation) code -->
 		<script src = "script/script.js"></script>
   </body>
 </html>

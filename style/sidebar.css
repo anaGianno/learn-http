@@ -1,7 +1,7 @@
+/* div for all other elements in the sidebar */
 .sidebar{
   position:fixed;
   z-index: 1;
-  
   top: 0;
   left: 0;
   right: 0;
@@ -17,6 +17,7 @@
     border-color:rgb(0,120,212);
 }
 
+/* grid for title of the page */
 .learn-http-grid{
   position:absoulute;
   padding-bottom:0.125rem;
@@ -40,40 +41,35 @@
   cursor:pointer
 }
 
-.special1 .arrow{
+/* styles that are added/removed with JavaScript */
+.pointdown .arrow{
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
 
-.speciala .arrow{
+.pointright .arrow{
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
 
-.specialb .html-grid-row{
-  border-width:1px;
-  border-style:solid;
-  border-color:rgb(0,120,212);
-  background:rgb(4,57,94)
-}
-
-
+/* title at the top of the sidebar */
 .learn-http{
     display:inline-block;
     font-weight:bold;
     padding-top:0.2rem;
 }
 
+/* styling for ALL sidebar text */
 .sidebar-text{
   margin-top:0.01rem;
   display:inline-block;
-  /* font-family: 'Cascadia Code', sans-serif; */
   font-family: "Ubuntu", sans-serif;
   font-size:13px;
   color:rgb(204,204,204);
   user-select: none;
 }
 
+/* white arrow used in the top left of the sidebar */
 .arrow {
   border: solid white;
   border-width: 0 0.1rem 0.1rem 0;
@@ -83,8 +79,8 @@
   margin-left:0.25rem;
 }
 
+/* orange arrow used on the html grid rows and header */
 .orange-arrow {
-  /* border: solid rgb(221,119,38); */
   border: solid rgb(251,119,38);
   background: solid white;
   border-width: 0 0.1rem 0.1rem 0;
@@ -93,6 +89,7 @@
   margin-bottom:0.25rem;
 }
 
+/* different styles for the arrows */
 .right {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
@@ -108,6 +105,7 @@
   -webkit-transform: rotate(45deg);
 }
 
+/* set display for grid of rows */
 .html-grid{
   position:fixed;
   display:grid;
@@ -116,9 +114,9 @@
   column-gap: 0.5rem;
 }
 
+/* grid for all html pages on the sidebar */
 .html-grid-row{
   display:grid;
-  /* grid-template-columns: 17px 4px 15px 132px;  */
   grid-template-columns: 0.9rem 0.2rem 0.75rem 7rem;
   padding-top:0.25rem;
   border-width:1px;
@@ -127,32 +125,18 @@
   background-color: rgb(24,24,24);
 }
 
+/* highlight the html row being hovered over */
 .html-grid-row:hover{
   border-color:rgb(42,45,46);
   background: rgb(42,45,46)
 }
 
-/* .html-grid-row:focus{
-  border-width:1px;
-  border-style:solid;
-  border-color:rgb(0,120,212);
-  background:rgb(4,57,94)
-} */
-
-.learn-http-grid:focus{
-  border-width:1px;
-  border-style:solid;
-  border-color:rgb(0,120,212);
-}
-
-.specialanimation ~ .row-blocker{
+/* animation for cover the html pages */
+.blockgrid ~ .row-blocker{
   margin-top:0;
 }
 
-.learn-http-grid:active{
-  border-color:rgb(24,24,24);
-}
-
+/* the blocker which covers part of the sidebar */
 .row-blocker{
   z-index: 1;
   position:absolute;

@@ -1,15 +1,17 @@
+/* the main div for everything in the body */
 .code-text-body{
     height: 95vh;
     width: 95%;
     padding-top:2rem;
     margin-left:1rem;
-    /* background:rgb(0,0,255) */
 }
 
+/* set a restriction for the image text so that it doesnt overflow */
 .txt-img{
 	max-width: 50rem;
 }
 
+/* style for comment text in body */
 .code-text-comment{
     display:inline-block;
     font-family: 'Cascadia Code', sans-serif;
@@ -18,41 +20,28 @@
     user-select: none;
 }
 
+/* style for headers */
 .code-text{
     font-family: 'Cascadia Code', sans-serif;
-    /* color:rgb(206,145,120); */
     color:rgb(204,204,204);
     user-select: none;
 }
 
+/* style display for all images in the grid */
 .grid-img{
   height:auto;
   display:grid;
   position:relative;
 }
 
+/* set display for all txt related to the image */
 .img-text{
 	width:auto;
 	height:30rem;
   padding-top:10rem;
-	/* background-color:rgb(255,0,0); */
 }
 
-.grid-secondary{
-	width:100rem;
-	padding-left:2.5rem;
-	padding-top:8rem;
-	grid-template-columns: 50rem 40rem;
-	row-gap:1rem;
-	column-gap:1rem;
-}
-
-.txt-secondary{
-	padding-top:0;
-	width:30vw;
-	height:30rem;
-}
-
+/* style display for primary grid (index) */
 .grid-primary{
 	grid-template-columns: 30rem 20rem;
 	column-gap:5rem;
@@ -62,10 +51,29 @@
 	width:75%;
 }
 
+/* style display for secondary grid (all other pages) */
+.grid-secondary{
+	width:100rem;
+	padding-left:2.5rem;
+	padding-top:8rem;
+	grid-template-columns: 50rem 40rem;
+	row-gap:1rem;
+	column-gap:1rem;
+}
+
+/* style display for secondary text (all other pages than index) */
+.txt-secondary{
+	padding-top:0;
+	width:30vw;
+	height:30rem;
+}
+
+/* set specific size for the cat image as its used differently than the secondary images */
 .cat{
 	width:30rem;
 }
 
+/* give the image color on click */
 .grid-img:active img{
     filter: grayscale(0%) sepia(0%) hue-rotate(0deg) 
 }
@@ -76,12 +84,13 @@
 	margin-bottom:20rem;
 }
 
+/* change the size of the interface to respond to browser width */
 @media (max-width: 650px) {
+	/* change size of the primary (index home page) interface */
 	.txt-primary{
 		height:17.5rem;
 		padding-top:0; 
 		padding-bottom:1rem;
-		/* background-color:rgb(255,0,0); */
 	}
 	.img-primary{
     width: 10rem;
@@ -96,6 +105,7 @@
     width: 65%;
 	}
 
+	/* change the size of the secondary (all other pages) interfaces */
 	.txt-secondary{
 		padding-top:1rem;
 		width:40vw;
@@ -118,18 +128,18 @@
 	}
 }
 
+/* change the size of the interface to respond to browser width */
 @media (min-width: 651px) and (max-width: 925px) {
+	/* change size of the primary (index home page) interface */
 	.txt-primary{
 		height:10rem;
 		padding-top:1rem; 
 		padding-bottom:1rem;
-		/* background-color:rgb(255,0,0); */
 	}
 	.img-primary{
     width: 20rem;
   }
 	.grid-primary{
-		/* grid-template-columns: 25rem 15rem; */
 		grid-template-columns: 25rem;
 		column-gap:0;
 		padding-left:2.5rem;
@@ -138,6 +148,7 @@
     width: 80%;
 	}
 
+	/* change the size of the secondary (all other pages) interfaces */
 	.txt-secondary{
 		padding-top:1rem;
 		width:40vw;
@@ -160,17 +171,17 @@
 	}
 }
 
+/* change the size of the interface to respond to browser width */
 @media (min-width: 926px) and (max-width: 1200px) {
+	/* change size of the primary (index home page) interface */
 	.txt-primary{
 		height:25rem;
 		padding-top:5rem; 
-		/* background-color:rgb(255,0,0); */
 	}
 	.img-primary{
     width: 20rem;
   }
 	.grid-primary{
-		/* grid-template-columns: 25rem 15rem; */
 		grid-template-columns: 25rem 15rem;
 		column-gap:1.5rem;
 		padding-left:2.5rem;
@@ -179,6 +190,7 @@
     width: 85%;
 	}
 
+	/* change the size of the secondary (all other pages) interfaces */
 	.txt-secondary{
 		padding-top:1rem;
 		width:60vw;
@@ -201,17 +213,17 @@
 	}
 }
 
+/* change the size of the interface to respond to browser width */
 @media (min-width: 1201px) and (max-width: 1500px) {
+	/* change size of the primary (index home page) interface */
 	.txt-primary{
 		height:25rem;
 		padding-top:5rem; 
-		/* background-color:rgb(255,0,0); */
 	}
 	.img-primary{
     width: 20rem;
   }
 	.grid-primary{
-		/* grid-template-columns: 25rem 15rem; */
 		grid-template-columns: 25rem 15rem;
 		column-gap:1.5rem;
 		padding-left:15rem;
@@ -220,6 +232,7 @@
     width: 90%;
 	}
 
+	/* change the size of the secondary (all other pages) interfaces */
 	.txt-secondary{
 		padding-top:1rem;
 		width:80vw;

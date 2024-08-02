@@ -3,17 +3,20 @@
   <head>
 		<title>LearnHTTP</title>
 
+		<!-- add fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
 		<link href="https://fonts.cdnfonts.com/css/cascadia-code" rel="stylesheet">
 
+		<!-- link CSS stylesheets for use -->
 		<link rel="stylesheet" href = "style/general.css">
 		<link rel="stylesheet" href = "style/sidebar.css">
 		<link rel="stylesheet" href = "style/header.css">
 		<link rel="stylesheet" href = "style/code-text-body.css">
   <body>
+		<!-- this header div shows what page the user is on -->
 		<div class = "header">
 			<div class = "header-grid" tabindex="1">
 				<p></p>
@@ -27,15 +30,18 @@
 			</div>
 		</div>
 
+		<!-- this sidebar div is used for navigation of pages -->
 		<div class = "sidebar" tabindex="1">
+			<!-- grid for title -->
 			<div class = "learn-http-grid" tabindex="1" onclick="toggleClass()">
 				<p><i class="arrow down"></i></p>
 				<p class = "sidebar-text learn-http">LEARN-HTTP</p>
 			</div>
 
-
+			<!-- grid for the pages that the user can navigate to -->
 			<div class = "html-grid">
 				<div class = "html-grid-row" tabindex="1">
+					<!-- add empty paragrpah tag to accomodate grid, add arrows and text -->
 					<p></p>
 					<p><i class="orange-arrow left"></i></p>
 					<p><i class="orange-arrow right"></i></p>
@@ -71,35 +77,40 @@
 				</div>
 			</div>
 
+			<!-- this div is used to cover the page navigation with transitions -->
 			<div class = "row-blocker"></div>
 		</div>
 
+		<!-- this div is used for the body of the page-->
 		<div class="code-text-body">
 			<div class="grid-img grid-secondary">
 				<img src = image/request.jpg class = "img-secondary">
-			<div class = "img-text txt-secondary">
-				<p class = "code-text-comment">&#60;&#33;&dash;&dash;</p><br>
-				<p class= "code-text-comment txt-img">
-					“What is a request?” – describe the format of an HTTP request as well as you can, and include a description of common error codes <br><br>
-					An HTTP request is the message sent by the client to the server to request for some information that they need. The format of an HTTP request includes the following: an HTTP version type, a URL, an HTTP method, some HTTP request headers which give information about what the request is and what data is being sent and optionally an HTTP body. These messages make it easy for people to understand what is being requested.
-					For the server to respond to the client, there are HTTP response status codes; here are a few categories of them 
-					and the most common status codes you’re likely to see. If the status code starts with a 2, then it indicates success.
-					 A common example of this is the status code 200, which means that the client’s request was a success and that the 
-					 server has sent back the data requested by the client. If the status code starts with a 3, then that means that there
-					  has been a redirection of some resource. An example of this is the status code 301, which means that the resource
-					   requested has been permanently moved to a different URL. If the status code stars with a 4, then that means that an 
-					   error has occurred with the client. Two examples of this is the status code 400, which means that the client typed 
-					   something wrong; there was incorrect syntax, and the server could not make sense of what the client was trying to request.
-					    Another one is the status code 404, which means that the resource that the client requested for could not be found on the
-						 server. One final category of status codes are when they start with 5. This means that the server has had an error. An
-						  example of a server error is status code 505, which is when the server does not support the current HTTP protocol version
-						  that is being used by the client’s request. 
-
-				</p>
-				<p class = "code-text-comment">&#45;&dash;&#62;</p>
+				<div class = "img-text txt-secondary">
+					<p class = "code-text-comment">&#60;&#33;&dash;&dash;</p><br>
+					<p class= "code-text-comment txt-img">
+						“What is a request?” – describe the format of an HTTP request as well as you can, and include a description of common error codes <br><br>
+						An HTTP request is the message sent by the client to the server to request for some information that they need. 
+						The format of an HTTP request includes the following: an HTTP version type, a URL, an HTTP method,
+						some HTTP request headers which give information about what the request is and what data is being sent and optionally an HTTP body. 
+						These messages make it easy for people to understand what is being requested.
+						For the server to respond to the client, there are HTTP response status codes; here are a few categories of them 
+						and the most common status codes you’re likely to see. If the status code starts with a 2, then it indicates success.
+						A common example of this is the status code 200, which means that the client’s request was a success and that the 
+						server has sent back the data requested by the client. If the status code starts with a 3, then that means that there
+						has been a redirection of some resource. An example of this is the status code 301, which means that the resource
+						requested has been permanently moved to a different URL. If the status code stars with a 4, then that means that an 
+						error has occurred with the client. Two examples of this is the status code 400, which means that the client typed 
+						something wrong; there was incorrect syntax, and the server could not make sense of what the client was trying to request.
+						Another one is the status code 404, which means that the resource that the client requested for could not be found on the
+						server. One final category of status codes are when they start with 5. This means that the server has had an error. An
+						example of a server error is status code 505, which is when the server does not support the current HTTP protocol version
+						that is being used by the client’s request. 
+					</p>
+					<p class = "code-text-comment">&#45;&dash;&#62;</p>
 			</div>
 		</div>
 
+		<!-- implement the JavaScript (animation) code -->
 		<script src = "script/script.js"></script>
   </body>
 </html>

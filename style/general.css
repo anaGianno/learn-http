@@ -1,31 +1,34 @@
+/* style display for all paragraph tags */
 p{
   margin-top: 0;
   margin-bottom:0;
   display:inline-block;
 }
 
+/* set background and display of body tag */
 body{
   margin: 0;
   background: rgb(31,31,31);
-  /* height: 100vh;
-  width: 100vw; */
   height: 100vh;
   width: 80%;
   padding-left: 11.1rem;
 }
   
+/* user cannot highlight a tag elements */
 a{
   text-decoration: none;
 }
 
+/* set margin for headers */
 h4{
  margin:0.5rem;
 }
 
 h1{
   margin:0.5rem;
- }
+}
 
+/* set green filter and display of all images */
 img{
   display: inline-block;
   border-radius:2.5%;
@@ -38,6 +41,7 @@ img{
   vertical-align: middle;
 }
 
+/* set font and color for list items */
 li{
   font-family: 'Cascadia Code', sans-serif;
   font-size:13px; 
@@ -45,17 +49,20 @@ li{
   user-select: none;
 }
 
+/* set display for unordered list */
 ul{
   margin:0;
   user-select: none;
 }
 
+/* set style for table and whats inside it */
 table,th,td{
   border:1px solid rgb(106,153,85);
   color:rgb(106,153,85);
   user-select: none;
 }
 
+/* when the data inside table is hovered, change color to orange */
 tr:hover > td{
   color:rgb(206,145,120);
 }
